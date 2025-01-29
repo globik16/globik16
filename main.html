@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>To-do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <label for="task" class="enter-task">Enter your task</label>
+            <div class="input-field">
+                <input class="input" type="text" id="task" placeholder="your task here">
+                <button class="add" type="submit" onclick="newTask()">Add
+                </button>
+            </div>
+
+            <div class="tasks" id="tasks"></div>
+        </div>
+
+        <div class="popup-container" id="popup">
+            <div class="popup">
+                <p class="set-time">Deadline</p>
+
+                <div class="expand-content" id="expand-content">
+                    <button class="calendar-button" onclick="selectTime()">
+                        <img src="assets/calendar.png" alt="calendar icon" class="btn-icon">
+                        Date & Time
+                    </button>
+
+                    <div class="date-time-picker" id="date-time-picker">
+                        <form class="date-select">
+
+                            <span class="selector">
+                                <label for="day">D</label>
+                                <select name="day" id="day" class="day"></select>
+                            </span>
+
+                            <span class="selector">
+                                <label for="month">M</label>
+                                <select name="month" id="month" class="month"></select>
+                            </span>
+
+                        </form>
+
+                        <form class="time-select">
+
+                            <span class="selector">
+
+                                <label for="hour">H</label>
+                                <select name="hour" id="hour" class="hour"></select>
+                            </span>
+                            <span class="selector">
+                                <label for="minute">M</label>
+                                <select name="minute" id="minute" class="minute"></select>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+
+
+                <button class="close-button" onclick="createNewTask(this)">Close</button>
+            </div>
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>
