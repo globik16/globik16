@@ -80,6 +80,7 @@ function removeTask(button) {
 }
 
 function createNewTask() {
+  let hour, minute, day, month;
   popup.classList.remove("popup-container-opened");
 
   let newButton = document.createElement("button");
@@ -96,7 +97,7 @@ function createNewTask() {
 
   setTimeout(() => {
     popup.classList.remove("popup-remove");
-  }, 500);
+  }, 300);
 
   dateTimePicker.classList.remove("date-time-picker-opened");
 }

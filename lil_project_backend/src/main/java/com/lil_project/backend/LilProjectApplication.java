@@ -1,0 +1,13 @@
+package com.lil_project.backend;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class LilProjectApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(LilProjectApplication.class, args);
+    }
+
+}

@@ -40,7 +40,7 @@ body {
 }
 
 .enter-task {
-  font-size: 80px;
+  font-size: 4.5vw;
   font-weight: bold;
   color: #081220d8;
   text-align: center;
@@ -55,7 +55,7 @@ body {
   background-color: transparent;
   width: 90%;
   padding: 10px;
-  font-size: 30px;
+  font-size: 2vw;
   outline: none;
 }
 
@@ -65,7 +65,7 @@ body {
   text-align: center;
   background-color: #5bd627;
   padding: 10px 15px;
-  font-size: 30px;
+  font-size: 2vw;
   color: #081220d8;
   font-weight: bold;
 }
@@ -101,7 +101,7 @@ body {
   padding: 10px;
   margin: 10px 0px;
   border-radius: 20px;
-  font-size: 30px;
+  font-size: 2vw;
 }
 
 .tasks button {
@@ -122,7 +122,7 @@ body {
 }
 
 .tasks li.task-done {
-  font-size: 30px;
+  font-size: 2vw;
   color: #7e848c;
   text-decoration: line-through;
 }
@@ -135,9 +135,9 @@ body {
   width: 100%;
   position: fixed;
   backdrop-filter: blur(3px);
-  transform: scale(0.1);
+  transform: scale(0.01);
   visibility: hidden;
-  transition: transform 0.5s, top 0.5s;
+  transition: transform 0.3s, top 0.3s;
 }
 
 .popup-container-opened {
@@ -146,7 +146,7 @@ body {
 }
 
 .popup-remove {
-  transform: scale(0.1);
+  transform: scale(0.01);
   visibility: visible;
 }
 
@@ -165,7 +165,7 @@ body {
 }
 
 .set-time {
-  font-size: 70px;
+  font-size: 4vw;
   color: #081220d8;
   font-weight: bold;
 }
@@ -181,8 +181,9 @@ body {
   border-radius: 15px;
   background-color: #5bd627;
   color: #081220d8;
-  font-size: 30px;
+  font-size: 2vw;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .close-button:hover {
@@ -197,7 +198,7 @@ body {
   background-color: #cbd4e1;
   border-radius: 10px;
   border: none;
-  font-size: 25px;
+  font-size: 1.5vw;
   width: 100%;
   padding: 10px 0px 0px 10px;
   min-width: max-content;
@@ -208,7 +209,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 90%;
+  width: 70%;
   border-radius: 10px;
   background-color: #cbd4e1;
   margin: 10px 0px;
